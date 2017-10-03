@@ -2,8 +2,8 @@
   "name": "server",
   "version": "1.0.0",
   "engines": {
-	  "node": "^7.6.0",
-	  "npm": "^4.1.2"
+    "node": "^7.6.0",
+    "npm": "^4.1.2"
   },
   "description": "",
   "main": "index.js",
@@ -21,8 +21,7 @@
     "jsonwebtoken": "^8.0.1",
     "morgan": "^1.8.2",
     "pg": "^7.3.0",
-    "sequelize": "^4.11.1",
-    "sqlite3": "^3.1.8"
+    "sequelize": "^4.11.1"
   },
   "devDependencies": {
     "eslint": "^4.7.2",
