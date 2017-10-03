@@ -12,7 +12,7 @@ app.use(bodyParser.json())
 app.use(cors())
 require('./routes')(app)
 
-sequelize.sync({force: false})
+sequelize.sync({force: true})
 	.then(() =>{
 		http.listen(process.env.PORT, function(){
 			console.log('Listening' + process.env.PORT)
