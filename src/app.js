@@ -13,8 +13,7 @@ app.use(cors())
 require('./routes')(app)
 
 sequelize.sync({force: false})
-	.then(() =>{
-		http.listen(process.env.PORT, function(){
-			console.log('Listening' + process.env.DATABASE_URL)
-		})
-	})
+
+http.listen(process.env.PORT, function(){
+	console.log('Listening' + process.env.DATABASE_URL)
+})
