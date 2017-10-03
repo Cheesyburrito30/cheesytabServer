@@ -10,11 +10,6 @@ const http = require('http').Server(app)
 app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
-app.get('/status', (req, res)=> {
-	res.send({
-		message: 'hello!'
-	})
-})
 require('./routes')(app)
 
 sequelize.sync({force: false})
